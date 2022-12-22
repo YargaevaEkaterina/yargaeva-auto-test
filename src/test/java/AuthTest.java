@@ -13,7 +13,7 @@ public class AuthTest {
         $("[href='/login']").click();
         //Ввести логин и пароль
         $("[id='login_field']").sendKeys("e.yargaeva.kazanexpress@gmail.com");
-        $("[id='password']").sendKeys("1111111111");
+        $("[id='password']").sendKeys("1111111111Kk.");
         //Нажать sign in
         $(".js-sign-in-button").click();
         //Развернуть меню пользователя
