@@ -15,18 +15,18 @@ public class JunitTest {
     public void switchToFixtures() {
         //Открывать страницу github
         step("Открыть страницу репозитория",() -> {
-                open("https://github.com/junit-team/junit4");
-            });
+            open("https://github.com/junit-team/junit4");
+        });
         //Кликнуть на branches
         step("Развернуть меню смены веток",() -> {
-                TestPages.repositoryPage.buttonSwitchBranches().click();
-            });
+            TestPages.repositoryPage.buttonSwitchBranches().click();
+        });
         step("Кликнуть на кнопку ветки fixture",() -> {
-                TestPages.repositoryPage.fixtureButton().click();
-            });
+            TestPages.repositoryPage.fixtureButton().click();
+        });
         step("Проверить что активная ветка называется fixture",() -> {
-                TestPages.repositoryPage.activeBranchName().shouldHave(text("fixtures"));
-            });
+            TestPages.repositoryPage.activeBranchName().shouldHave(text("fixtures"));
+        });
         }
     }
 
