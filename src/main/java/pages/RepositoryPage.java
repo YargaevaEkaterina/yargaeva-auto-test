@@ -14,6 +14,10 @@ public class RepositoryPage {
         return $("[href='https://github.com/junit-team/junit4/tree/fixtures']").as("кнопка ветки фикстур");
     }
 
+    public SelenideElement activeBranchName() {
+        return $( "[class='css-truncate-target']").as("название текущей ветки");
+    }
+
     public SelenideElement releaseFilter() {
         return $("#release-filter").as("инпут поиска по релизам");
     }
