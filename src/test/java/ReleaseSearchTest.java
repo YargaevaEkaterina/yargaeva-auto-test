@@ -23,7 +23,7 @@ public class ReleaseSearchTest {
     }
 
     @ParameterizedTest(name = "{displayName} {0}")
-    @MethodSource("positiveScenarious")
+    @MethodSource("positiveScenarios")
     @Story("Поиск релизов")
     @DisplayName("Позитивные проверки поиска по релизам:")
     public void searchTest(String type, String value) {
@@ -40,7 +40,7 @@ public class ReleaseSearchTest {
         });
     }
 
-    static Stream<Arguments> positiveScenarious() {
+    static Stream<Arguments> positiveScenarios() {
         return Stream.of(
                 arguments(
                         "Поиск по номеру релиза",
