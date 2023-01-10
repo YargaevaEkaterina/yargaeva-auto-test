@@ -36,8 +36,8 @@ public class ReleaseSearchTest {
                 });
 
         step("Проверить что блок с карточкой релиза содержит текст, введенный в поиске",() -> {
-            TestPages.repositoryPage.releaseName().shouldHave(text(value));
-        });
+                    TestPages.repositoryPage.releaseName().shouldHave(text(value));
+                });
     }
 
     static Stream<Arguments> positiveScenarios() {
